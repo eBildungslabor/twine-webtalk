@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+	background-image: url('https://i.imgur.com/uHR0fBT.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+  font-size: 1.4em;
+}
+
+tw-story {
+	background-color: rgba(255,255,255,0.70);
+	padding: 5%;
+	width: 60%;
+	margin: auto;
+font-family: 'Special Elite', cursive;
+	color: black;
+ 
+}
+
+tw-sidebar {display:none}
+
+tw-link, .enchantment-link {
+	font-weight: normal;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: black;
+	background-color: rgba(252, 244, 86, 0.6);
+}
