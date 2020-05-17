@@ -78,6 +78,18 @@ tw-link, .enchantment-link {
       <h3>2.2 Profi-Variante</h3>
       
       <p>Die oben dargestellte Basis-Variante ist ein guter Anfang. Aber mit Twine kannst Du noch viel mehr machen. Mit wenigen Befehlen (Texteingaben) lässt sich in einem Twine viel bewirken. 5 Best-Of Befehle stelle ich hier vor. Du findest sie zusammengestellt in diesem Twine.</p>
+  <p><ol>
+    
+    <li>Twines lassen sich personalisieren, indem man eine ‘Namensabfrage’ an den Anfang stellt. Alternativ kann eine Auswahl vorgegeben und daraus gewählt werden:<br><code>
+(set: $name to (prompt: ‘Bitte gib Deinen Namen ein:’, ‘...’))<br>
+(cycling-link: bind $name, 'Max', 'Maria', 'Markus', 'Mascha', 'Mara')</code></li>
+ 
+    <li>Twines lassen sich bei jedem Lesen zufallsmäßig ändern und/ oder der Text wechselt in einem festgelegten Abstand.<br><code>Der Keller war (either: ‘dunkel’, ‘stickig’, ‘verstaubt’, ‘hell’, ‘kalt’, ‘finster’)<br>
+Der Keller war (live: 1s)[(either: ‘dunkel’, ‘stickig’, ‘verstaubt’, ‘hell’, ‘kalt’, ‘finster’)]</code><li>
+    
+    <li>
+    
+ 
   
     
     </main><!-- /.container -->
