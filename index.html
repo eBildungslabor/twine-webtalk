@@ -1,8 +1,5 @@
 <!doctype html>
 
-<!-- In dieser Datei kannst Du Deine eigenen Inhalte eintragen. 
-Die remixbaren Stellen, sind mit Kommentar gekennzeichnet. 
-Alles andere einfach so stehen lassen, wie es ist. -->
 
 <html lang="de">
   <head>
@@ -11,7 +8,7 @@ Alles andere einfach so stehen lassen, wie es ist. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="starter-template.css" rel="stylesheet">
     
-<!-- Eigenen Titel eingeben (Es ist nicht der Titel, der auf Deiner Website sichtbar ist, sondern der im Tab des Browsers angezeigt wird.) -->
+
     <title>Twine-Webtalk</title>
 
   </head>
@@ -20,7 +17,6 @@ Alles andere einfach so stehen lassen, wie es ist. -->
     <main role="main" class="container">
       <div class="starter-template">
         
-<!-- Ersetze die Mustertexte mit Deinem eigenen Titel und Untertitel -->
         <h1>Einstieg in Twine</h1>
         <p class="lead">Anleitung und Remix-Beispiele<br>- erstellt für die <a href="https://www.oercamp.de/webinare/weboep/twine/">#OERcamp Webtalk Reihe zu offenen Webtools</a></p>
      
@@ -40,7 +36,7 @@ Alles andere einfach so stehen lassen, wie es ist. -->
   <p>
       <ol>
         <li>Öffne die Websie <a href="https://twinery.org/2" target=blank>twinery.org</a></li>
-        <li>Erstelle eine neue Geschichte und gib hier einen passenden Namen.</li>
+        <li>Erstelle eine neue Geschichte und gib ier einen passenden Namen.</li>
 <li>Erstelle eine erste Passage, benenne sie möglichst aussagekräftig (z.B. start) und gib Deinen gewünschten Inhalt ein. Verlinkungen haben die folgende Form: [[Mein verlinkter Text ->passagenname]].</li>
   <li>Wenn Du fertig bist, dann öffne das Menü und wähle 'Als Datei veröffentlichen'. Es wird eine .html Datei heruntergeladen.</li>
     <li>Teile die HTML-Datei (z.B. Versand via Mail) oder stelle sie auf <a href="https://filebin.net" target="blank">Filebin.net</a></li>
@@ -73,7 +69,7 @@ tw-link, .enchantment-link {
    
   </code>
     </p>
-        <p>Ebenso kannst Du die Stylesheets aus den oben verlinkten Beispielen nutzen (<a href="https://github.com/ebildungslabor/twine-webtalk/ueberblick.css">Stylesheet der Twine-Übersicht</a> und <a href="https://github.com/ebildungslabor/twine-webtalk/zauberwaqld.css">Stylesheet der Geschichte 'Im Zauberwald'</a>). Auf diese Weise sieht Dein Twine gleich deutlich schicker aus. 
+        <p>Ebenso kannst Du die Stylesheets aus den oben verlinkten Beispielen nutzen (<a href="https://ebildungslabor.github.io/twine-webtalk/ueberblick.css">Stylesheet der Twine-Übersicht</a> und <a href="https://ebildungslabor.github.io/twine-webtalk//zauberwald.css">Stylesheet der Geschichte 'Im Zauberwald'</a>). Auf diese Weise sieht Dein Twine gleich deutlich schicker aus. 
         
       <h3>2.2 Profi-Variante</h3>
       
@@ -87,11 +83,24 @@ tw-link, .enchantment-link {
     <li>Twines lassen sich bei jedem Lesen zufallsmäßig ändern und/ oder der Text wechselt in einem festgelegten Abstand.<br><code>Der Keller war (either: ‘dunkel’, ‘stickig’, ‘verstaubt’, ‘hell’, ‘kalt’, ‘finster’)<br>
 Der Keller war (live: 1s)[(either: ‘dunkel’, ‘stickig’, ‘verstaubt’, ‘hell’, ‘kalt’, ‘finster’)]</code><li>
     
-    <li></li>
+    <li>Text kann in Twine vielfältig dargestellt werden. Beispiele<br>
+      <code>(text-style: "shadow")[Hallo. Wie geht es Dir?]
+        <br>(text-style: "mark")[Hallo. Wie geht es Dir?]<br>
+        (text-style: "outline")[Hallo. Wie geht es Dir?]
+        <br>(text-style: "blur")[Hallo. Wie geht es Dir?]
+        <br>(text-style: "blink")[Hallo. Wie geht es Dir?]
+      </code>
+      <br>Und auch vielfältig erscheinen: Beispiel <code> (t8n: "pulse")[Hallo, wie geht es Dir?]</code> (Ebenso geht z.B. flicker, dissolve, rumble, shudder oder slide-right</li>
     
-    <li></li>
+    <li>Auch die Übergänge zur nächsten Folie können vielfältig gestaltet werden, z.B. 'zitternd'. Beispiel: (t8n-depart: "rumble")[[slide4]].</li>
     
-    <li></li>
+    <li>Inhalte können nach bestimmten Regeln angezeigt werden:<br>
+    <code>
+     <br>(event: when time > 3s)[Text erscheintnach 3 Sekunden]<br>
+      <br>(link:"Klick")[Dann erscheint weiterer Text]
+      <br>(more:)[Text erscheint, wenn keine anderen Links mehr da sind.] 
+      </code>
+      </li>
 </ol></p>
 
 <h2>3. Veröffentlichung</h2>
