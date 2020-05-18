@@ -81,7 +81,7 @@ tw-link, .enchantment-link {
 (cycling-link: bind $name, 'Max', 'Maria', 'Markus', 'Mascha', 'Mara')</code></li>
  
     <li>Twines lassen sich bei jedem Lesen zufallsmäßig ändern und/ oder der Text wechselt in einem festgelegten Abstand.<br><code>Der Keller war (either: ‘dunkel’, ‘stickig’, ‘verstaubt’, ‘hell’, ‘kalt’, ‘finster’)<br>
-Der Keller war (live: 1s)[(either: ‘dunkel’, ‘stickig’, ‘verstaubt’, ‘hell’, ‘kalt’, ‘finster’)]</code><li>
+Der Keller war (live: 1s)[(either: ‘dunkel’, ‘stickig’, ‘verstaubt’, ‘hell’, ‘kalt’, ‘finster’)]</code></li>
     
     <li>Text kann in Twine vielfältig dargestellt werden. Beispiele<br>
       <code>(text-style: "shadow")[Hallo. Wie geht es Dir?]
@@ -92,12 +92,13 @@ Der Keller war (live: 1s)[(either: ‘dunkel’, ‘stickig’, ‘verstaubt’,
       </code>
       <br>Und auch vielfältig erscheinen: Beispiel <code> (t8n: "pulse")[Hallo, wie geht es Dir?]</code> (Ebenso geht z.B. flicker, dissolve, rumble, shudder oder slide-right</li>
     
-    <li>Auch die Übergänge zur nächsten Folie können vielfältig gestaltet werden, z.B. 'zitternd'. Beispiel: (t8n-depart: "rumble")[[slide4]].</li>
+    <li>Auch die Übergänge zur nächsten Folie können vielfältig gestaltet werden, z.B. 'zitternd'. Beispiel: <br
+   <code>(t8n-depart: "rumble")[[slide4]]</code></li>
     
     <li>Inhalte können nach bestimmten Regeln angezeigt werden:<br>
     <code>
-     <br>(event: when time > 3s)[Text erscheintnach 3 Sekunden]<br>
-      <br>(link:"Klick")[Dann erscheint weiterer Text]
+     (event: when time > 3s)[Text erscheintnach 3 Sekunden]<br>
+      (link:"Klick")[Dann erscheint weiterer Text]
       <br>(more:)[Text erscheint, wenn keine anderen Links mehr da sind.] 
       </code>
       </li>
